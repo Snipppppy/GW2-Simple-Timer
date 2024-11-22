@@ -272,5 +272,3 @@ function updateAlert(Event){
         umami.track(`A Gamer got notified about ${Event.parentEvent.name}`)
     }
 }
-
-
