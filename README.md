@@ -37,6 +37,7 @@ current testing Live Demo: https://master-demo-gw2timer.netlify.app/
 - let user choose how far in advance events are displayed
 - let user choose how far in advance the countdown is displayed
 - UI/UX improvement
+- set "Done Marker" via a user provided API key
 - include Farm train Discord notifications - maybe if possible
 
 ![Screenshot.png](app/assets/Screenshot.png)
