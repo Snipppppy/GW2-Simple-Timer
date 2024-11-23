@@ -196,8 +196,9 @@ function getDoneFromLocalStorage(parentEventKey){
     let valueDate = new Date(value)
 
     if (now < valueDate ) {
-        console.log(parentEventKey, " stil true")
-        return true}
+        return true
+    }
+
     localStorage.removeItem(`done-${parentEventKey}`)
     return false
 }
