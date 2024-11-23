@@ -35,4 +35,4 @@ current testing Live Demo: https://master-demo-gw2timer.netlify.app/
 
 ---
 
-![Screenshot.png](app/assets/Screenshot.png)
+![Screenshot from 2024-11-23 15-40-49.png](app/assets/Screenshot%20from%202024-11-23%2015-40-49.png)
