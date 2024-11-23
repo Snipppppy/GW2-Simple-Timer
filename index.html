@@ -65,7 +65,7 @@
         <div class="links">
             <a class="fastf-link links-tab hover" href="" target="_blank"><img class="fastf-icon" src="app/assets/fastf.svg" width="25px" height="25px" alt="Link to [fast]Farimg Gold/Hour"></a>
             <a class="wiki-link links-tab hover" href="" target="_blank"><img class="wiki-icon" src="app/assets/wiki.svg" width="25px" height="25px" alt="Link to the official Guild Wars 2 Wiki"></a>
-            <a class="done-link links-tab hover"><img class="done-icon" src="app/assets/done_outline_FFFFFF.svg" width="25px" height="25px" alt=""></a>
+            <div class="done-link links-tab hover"><img class="done-icon" src="app/assets/done_outline_FFFFFF.svg" width="25px" height="25px" alt=""></div>
             <a class="reminder-link links-tab hover"><img class="reminder-icon" src="app/assets/notifications_off_FFFFFF.svg"  alt="Reminder switch 2 5 10 Minutes"></a>
             <a class="waypoint-link links-tab hover"><img class="waypoint-icon" src="app/assets/waypoint.svg" width="23px" height="23px" alt="Copy Waypoint"></a>
 
@@ -85,9 +85,9 @@
 <template id="tgl-template">
     <div class="tgl-element" >
         <label class="tgl-label" ></label>
-        <input class="tgl-checkbox" type="checkbox">
-        <span class="tgl-slider"></span>
-
+        <input class="visibility-checkbox" type="checkbox">
+        <span class="visibility-slider"></span>
+        <input class="done-checkbox" type="checkbox">
     </div>
 </template>
 

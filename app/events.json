@@ -330,7 +330,7 @@
     },
     {
       "key": "BuriedTreasure",
-      "categoryKey": "hot",
+      "categoryKey": "pof",
       "name": "BuriedTreasure",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Search_for_Buried_Treasure",
       "fastF": "",
@@ -338,7 +338,7 @@
     },
     {
       "key": "ThePathtoAscension",
-      "categoryKey": "hot",
+      "categoryKey": "pof",
       "name": "The Path to Ascension",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Path_to_Ascension",
       "fastF": "https://fast.farming-community.eu/open-world/meta/elon-riverlands-the-path-to-ascension",
@@ -346,7 +346,7 @@
     },
     {
       "key": "Ddoppelganger",
-      "categoryKey": "hot",
+      "categoryKey": "pof",
       "name": "Ddoppelganger",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Path_to_Ascension",
       "fastF": "https://fast.farming-community.eu/open-world/meta/elon-riverlands-doppelganger",

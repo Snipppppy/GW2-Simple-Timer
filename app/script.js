@@ -14,15 +14,15 @@ let allEvents = []
 
 let now = new Date();
 const minTimeToShowCountdown = 20 * 60 * 1000
-const maxTimeToShowCards = 2 * 60 * 60 * 1000
+const maxTimeToShowCards = 5 * 60 * 60 * 1000
 
-class Event {
+class EventClass {
     constructor(parentEvent, event, start) {
         this.parentEvent = parentEvent;
         this.event = event;
         this.eventid = start + parentEvent.key
         this.localStartTime = getLocalTime(start)
-        this.color = getObjByKeye(events.categories, parentEvent.categoryKey).color
+        this.color = getObjByKey(events.categories, parentEvent.categoryKey).color
         if (this.localStartTime < now) {this.localStartTime.setDate(this.localStartTime.getDate() +1 )}
         this.reminderMSbeforEvent = "no"
         this.remainingMS = null
@@ -35,12 +35,14 @@ class Event {
         clone.querySelector(".event-card-element").id =  this.eventid
         clone.querySelector(".event-card-element").classList.add(this.parentEvent.key)
         clone.querySelector(".event-card-element").style.borderColor =  this.color
+        clone.querySelector('.done-icon').classList.add(`di-${this.parentEvent.key}`)
         clone.querySelector(".wiki-link").href = this.parentEvent.wiki
         clone.querySelector(".fastf-link").href = this.parentEvent.fastF
         clone.querySelector(".event-start-time").textContent = getTimeAsStr(this.localStartTime)
         clone.querySelector(".event-name").textContent = this.parentEvent.name
         clone.querySelector(".note").textContent = this.parentEvent.note
         clone.querySelector(".event-map").textContent = this.event.map
+
         eventTable.appendChild(clone)
         this.card = document.getElementById(this.eventid)
 
@@ -48,6 +50,8 @@ class Event {
         let wp = this.card.querySelector(".waypoint-link")
         let copy = `${getTimeAsStr(this.localStartTime)} || ${this.parentEvent.name} || ${this.event.waypoint}`
         wp.addEventListener("click", () => {  navigator.clipboard.writeText(copy)    })
+        wp.addEventListener("mousemove", () => {this.card.querySelector(".waypoint-icon").src = "app/assets/waypoint_active.svg"})
+        wp.addEventListener("mouseout", () => {this.card.querySelector(".waypoint-icon").src = "app/assets/waypoint.svg"})
 
         //Reminder Link
         let rl = this.card.querySelector(".reminder-link")
@@ -60,9 +64,22 @@ class Event {
             this.card.querySelector(".fastf-link").style.visibility = "hidden"
         }
 
+        //Done Link
+        let dl = this.card.querySelector(".done-link")
+        let toggleCheckbox = document.getElementById(`dcb-${this.parentEvent.key}`)
+        dl.addEventListener("click", () => {
+            toggleCheckbox.click()
+        } )
+
+        if (toggleCheckbox.checked) {
+            this.card.querySelector(".done-icon").src = "app/assets/done_outline_75FB4C_.svg"
+        }
+
         //Toggle Visibility based on localStorage Settings
-        let visibility = getVisibility(this.parentEvent.key)
-        toggleVisibility(this.card, visibility)
+        let visibility = getVisibilityFromLocalStorage(this.parentEvent.key)
+        toggleVisibility(this.parentEvent.key, visibility)
+
+
 
     }
     updateCard() {
@@ -87,19 +104,19 @@ class Event {
 
 // Add toggle list categories
 for (let category of events.categories) {
-    addTglCategory(category)
+    addToggleCategory(category)
 }
 
 // Add visibility toggles
 for (let parent of events.parentEvents) {
-    addVisibilityTgl(parent)
+    addToggleElement(parent)
 }
 
 // Init all events
 for (let event of events.events) {
     for (let start of event.start) {
-        let pEvt =  getObjByKeye(events.parentEvents, event.parentKey);
-        let evt = new Event(pEvt, event, start)
+        let pEvt =  getObjByKey(events.parentEvents, event.parentKey);
+        let evt = new EventClass(pEvt, event, start)
         allEvents.push(evt)
     }
 }
@@ -111,7 +128,7 @@ allEvents.sort((a, b) => a.localStartTime - b.localStartTime)
 if (localStorage.length > 0) {
     document.getElementById("browser-settings-alert").remove()
 } else {
-    umami.track(`revisits with disabled events`)
+    umami.track(`revisited with disabled events`)
 }
 
 //Add Cards to DOM
@@ -125,7 +142,7 @@ function interval(){
 
 }
 
-function addTglCategory(category) {
+function addToggleCategory(category) {
     let clone = categoryTemplate.content.cloneNode(true)
 
     clone.querySelector(".categories-name").innerHTML = category.name
@@ -135,54 +152,88 @@ function addTglCategory(category) {
     categoryList.appendChild(clone)
 }
 
-function addVisibilityTgl(parentEvent) {
+function addToggleElement(parentEvent) {
     let clone = toggleTemplate.content.cloneNode(true)
     let tglList = document.getElementById(parentEvent.categoryKey)
 
     clone.querySelector(".tgl-label").textContent = parentEvent.name
-    clone.querySelector(".tgl-checkbox").checked = getVisibility(parentEvent.key)
-    clone.querySelector(".tgl-checkbox").id = `cb-${parentEvent.key}`
-    clone.querySelector(".tgl-label").htmlFor = `cb-${parentEvent.key}`
+    clone.querySelector(".visibility-checkbox").checked = getVisibilityFromLocalStorage(parentEvent.key)
+    clone.querySelector(".visibility-checkbox").id = `vcb-${parentEvent.key}`
+    clone.querySelector(".tgl-label").htmlFor = `vcb-${parentEvent.key}`
+    clone.querySelector(".done-checkbox").checked = getDoneFromLocalStorage(parentEvent.key)
+    clone.querySelector(".done-checkbox").id = `dcb-${parentEvent.key}`
 
     tglList.appendChild(clone)
 
-    let tgl = document.getElementById(`cb-${parentEvent.key}`)
-    tgl.addEventListener("change", (e) => {
-        setVisibility(parentEvent.key, e.target.checked)
-        let elements = document.getElementsByClassName(parentEvent.key)
-        toggleVisibility(elements, e.target.checked)
-        umami.track(`Toggeled: ${parentEvent.name} ${e.target.checked}`)
+    let visibilityToggle = document.getElementById(`vcb-${parentEvent.key}`)
+    visibilityToggle.addEventListener("change", (e) => {
+        toggleVisibility(parentEvent.key, e.target.checked)
+    })
+
+    let doneToggle = document.getElementById(`dcb-${parentEvent.key}`)
+    doneToggle.addEventListener("change", (e) => {
+        toggleDone(parentEvent.key, e.target.checked)
     })
 }
 
-function getVisibility(parentEventID) {
-    let value = localStorage.getItem(parentEventID)
+function getVisibilityFromLocalStorage(parentEventKey) {
+    let value = localStorage.getItem(parentEventKey)
     if (value === "false") {return false}
     return true
 }
 
-function setVisibility(parentEventKey, value) {
-    if (value === false) {localStorage.setItem(parentEventKey, "false")}
-    if (value === true) {localStorage.removeItem(parentEventKey)}
+function getDoneFromLocalStorage(parentEventKey){
+    let value = localStorage.getItem(`done-${parentEventKey}`)
+    let valueDate = new Date(value)
+
+    if (now < valueDate ) {
+        console.log(parentEventKey, " stil true")
+        return true}
+    localStorage.removeItem(`done-${parentEventKey}`)
+    return false
 }
 
-function getObjByKeye(ArrOfObject, key){
+function getObjByKey(ArrOfObject, key){
     for (let obj of ArrOfObject) {
         if (obj.key === key) { return obj }
     }
 }
 
-function toggleVisibility(elements, visibility) {
-    if ( !HTMLCollection.prototype.isPrototypeOf(elements) ) {elements = [elements]}
-
+function toggleVisibility(parentEventKey, visibility) {
+    let elements = document.getElementsByClassName(parentEventKey)
     if (visibility === true) {
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = "flex";
+        for (let e of elements) {
+            e.style.display = "flex"
+            localStorage.removeItem(parentEventKey)
         }
     }
     if (visibility === false) {
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = "none";
+        for (let e of elements) {
+            e.style.display = "none"
+            localStorage.setItem(parentEventKey, "false")
+        }
+    }
+    umami.track(`Toggled ${parentEventKey} ${visibility}`)
+}
+
+function toggleDone(parentEventKey, value) {
+    let elements = document.getElementsByClassName(`di-${parentEventKey}`)
+
+    if (value === false) {
+        for (let e of elements) {
+            e.src = "app/assets/done_outline_FFFFFF.svg"
+            localStorage.removeItem(`done-${parentEventKey}`)
+        }
+    }
+    if (value === true) {
+        for (let e of elements) {
+            e.src = "app/assets/done_outline_75FB4C_.svg"
+            let ServerResetTime = new Date()
+            ServerResetTime.setUTCHours(24)
+            ServerResetTime.setUTCMinutes(0)
+            ServerResetTime.setUTCSeconds(0)
+            ServerResetTime.setUTCMilliseconds(0)
+            localStorage.setItem(`done-${parentEventKey}`, ServerResetTime)
         }
     }
 }
