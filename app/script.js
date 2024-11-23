@@ -128,7 +128,11 @@ allEvents.sort((a, b) => a.localStartTime - b.localStartTime)
 if (localStorage.length > 0) {
     document.getElementById("browser-settings-alert").remove()
 } else {
-    umami.track(`revisited with disabled events`)
+    try {
+        umami.track(`revisited with disabled events`)
+    } catch (err) {
+        console.log(err)
+    }
 }
 
 //Add Cards to DOM
@@ -168,6 +172,11 @@ function addToggleElement(parentEvent) {
     let visibilityToggle = document.getElementById(`vcb-${parentEvent.key}`)
     visibilityToggle.addEventListener("change", (e) => {
         toggleVisibility(parentEvent.key, e.target.checked)
+        try {
+            umami.track(`Toggled ${parentEventKey} ${visibility}`)
+        } catch (err){
+            console.log(err)
+        }
     })
 
     let doneToggle = document.getElementById(`dcb-${parentEvent.key}`)
@@ -213,7 +222,6 @@ function toggleVisibility(parentEventKey, visibility) {
             localStorage.setItem(parentEventKey, "false")
         }
     }
-    umami.track(`Toggled ${parentEventKey} ${visibility}`)
 }
 
 function toggleDone(parentEventKey, value) {
@@ -320,6 +328,11 @@ function updateAlert(Event){
             if (x === 0) { element.style.backgroundColor = "var(--accent-color)"; x=1}
             else { element.style.backgroundColor = "var(--alt-bg-color)"; x=0}
         }
-        umami.track(`A Gamer got notified about ${Event.parentEvent.name}`)
+
+        try {
+            umami.track(`A Gamer got notified about ${Event.parentEvent.name}`)
+        } catch (err){
+            console.log(err)
+        }
     }
 }
