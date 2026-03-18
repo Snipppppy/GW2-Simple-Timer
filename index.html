@@ -30,18 +30,23 @@
 <body>
     <header>
         <div class="logo"><img src="/app/assets/Event_star_(map_icon).png" height="40px" width="auto" alt="GW2 Logo"/></div>
-        <h2 class="SiteName">Simple Timer</h2>
+        <h2 class="SiteName" data-i18n="ui.siteName">Simple Timer</h2>
+        <div class="lang-switcher">
+            <button class="lang-btn lang-active" data-lang="en">EN</button>
+            <span class="lang-separator">|</span>
+            <button class="lang-btn" data-lang="de">DE</button>
+        </div>
     </header>
 
     <label class="hamburger">
         <input type="checkbox">
     </label>
     <aside class="sidebar">
-        <div id="browser-settings-alert">Depending on your browser settings, this will be saved for your future sessions.</div>
+        <div id="browser-settings-alert" data-i18n="ui.browserSettingsAlert">Depending on your browser settings, this will be saved for your future sessions.</div>
         <div id="category-list" class="category-list"></div>
         <div class="about">
-            Wannt to help to keep the light on?<br/>
-            A Mystic Coin would do it for me. 😉<br/><br/>
+            <span data-i18n="ui.donationAsk">Want to help keep the lights on?</span><br/>
+            <span data-i18n="ui.donationHint">A Mystic Coin would do it for me. 😉</span><br/><br/>
 
             Skiqper.4827 <br/><br/><br/>
             <a href="https://github.com/Snipppppy/GW2-Simple-Timer/" target="_blank" class="github-link">Github</a>
@@ -65,11 +70,11 @@
             <h3 class="event-map">--Name Of The Event Map!--</h3>
         </div>
         <div class="links">
-            <a class="fastf-link links-tab hover" tootltip="Visit [fast] Farming Community" href="" target="_blank"><img class="fastf-icon" src="app/assets/fastf.svg" width="25px" height="25px" alt="Link to [fast]Farming Gold/Hour"></a>
-            <a class="wiki-link links-tab hover" tootltip="Open Event in Guild Wiki" href="" target="_blank"><img class="wiki-icon" src="app/assets/wiki.svg" width="25px" height="25px" alt="Link to the official Guild Wars 2 Wiki"></a>
-            <div class="done-link links-tab hover" tootltip="Make as Done!"><img class="done-icon" src="app/assets/done_outline_FFFFFF.svg" width="25px" height="25px" alt=""></div>
-            <a class="reminder-link links-tab hover"tootltip="Set an alert!"><img class="reminder-icon" src="app/assets/notifications_off_FFFFFF.svg"  alt="Reminder switch 2 5 10 Minutes"></a>
-            <a class="waypoint-link links-tab hover" tootltip="Copy waypoint to clipboard!"><img class="waypoint-icon" src="app/assets/waypoint.svg" width="23px" height="23px" alt="Copy Waypoint"></a>
+            <a class="fastf-link links-tab hover" tootltip="Visit [fast] Farming Community" data-i18n-tooltip="ui.tooltipFast" href="" target="_blank"><img class="fastf-icon" src="app/assets/fastf.svg" width="25px" height="25px" alt="Link to [fast]Farming Gold/Hour"></a>
+            <a class="wiki-link links-tab hover" tootltip="Open Event in Guild Wiki" data-i18n-tooltip="ui.tooltipWiki" href="" target="_blank"><img class="wiki-icon" src="app/assets/wiki.svg" width="25px" height="25px" alt="Link to the official Guild Wars 2 Wiki"></a>
+            <div class="done-link links-tab hover" tootltip="Mark as Done!" data-i18n-tooltip="ui.tooltipDone"><img class="done-icon" src="app/assets/done_outline_FFFFFF.svg" width="25px" height="25px" alt=""></div>
+            <a class="reminder-link links-tab hover" tootltip="Set an alert!" data-i18n-tooltip="ui.tooltipAlert"><img class="reminder-icon" src="app/assets/notifications_off_FFFFFF.svg"  alt="Reminder switch 2 5 10 Minutes"></a>
+            <a class="waypoint-link links-tab hover" tootltip="Copy waypoint to clipboard!" data-i18n-tooltip="ui.tooltipWaypoint"><img class="waypoint-icon" src="app/assets/waypoint.svg" width="23px" height="23px" alt="Copy Waypoint"></a>
 
         </div>
     </div>
