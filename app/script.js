@@ -1,3 +1,5 @@
+import { getTranslation, translateElement, setLanguage, getCurrentLang, updateLangButtons, translateDOM } from './i18n.js';
+
 let events = await fetch('/app/events.json')
     .then(response => response.json())
     .then(obj => { return obj })
@@ -39,12 +41,13 @@ class EventClass {
         clone.querySelector(".wiki-link").href = this.parentEvent.wiki
         clone.querySelector(".fastf-link").href = this.parentEvent.fastF
         clone.querySelector(".event-start-time").textContent = getTimeAsStr(this.localStartTime)
-        clone.querySelector(".event-name").textContent = this.parentEvent.name
-        clone.querySelector(".note").textContent = this.parentEvent.note
-        clone.querySelector(".event-map").textContent = this.event.map
+        clone.querySelector(".event-name").textContent = getTranslation('events', this.parentEvent.key)
+        clone.querySelector(".note").textContent = this.parentEvent.note ? getTranslation('notes', this.parentEvent.note) : ''
+        clone.querySelector(".event-map").textContent = getTranslation('maps', this.event.map)
 
         eventTable.appendChild(clone)
         this.card = document.getElementById(this.eventid)
+        translateElement(this.card)
 
         // Waypoint Link
         let wp = this.card.querySelector(".waypoint-link")
@@ -123,7 +126,9 @@ for (let event of events.events) {
 allEvents.sort((a, b) => a.localStartTime - b.localStartTime)
 
 //Hide browser-settings-alert in the SideBar
-if (localStorage.length > 0) {
+// Check if there are stored settings beyond just the language preference
+const hasUserSettings = Object.keys(localStorage).some(k => k !== 'lang')
+if (hasUserSettings) {
     document.getElementById("browser-settings-alert").remove()
 } else {
     try {
@@ -132,6 +137,42 @@ if (localStorage.length > 0) {
         console.log(err)
     }
 }
+
+// Language switcher
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+        await setLanguage(btn.dataset.lang)
+        retranslateAll()
+    })
+})
+
+function retranslateAll() {
+    // Re-translate sidebar categories
+    for (let category of events.categories) {
+        let el = document.getElementById(`catTgl-${category.key}`)
+        if (el) {
+            el.closest('.tgl-category-element').querySelector('.categories-label').innerHTML = getTranslation('categories', category.key)
+        }
+    }
+    // Re-translate sidebar toggle labels
+    for (let parent of events.parentEvents) {
+        let label = document.querySelector(`label[for="vcb-${parent.key}"]`)
+        if (label) label.textContent = getTranslation('events', parent.key)
+    }
+    // Re-translate event cards
+    for (let evt of allEvents) {
+        if (evt.card) {
+            evt.card.querySelector('.event-name').textContent = getTranslation('events', evt.parentEvent.key)
+            evt.card.querySelector('.note').textContent = evt.parentEvent.note ? getTranslation('notes', evt.parentEvent.note) : ''
+            evt.card.querySelector('.event-map').textContent = getTranslation('maps', evt.event.map)
+            translateElement(evt.card)
+        }
+    }
+}
+
+// Set initial language state
+updateLangButtons()
+translateDOM()
 
 //Add Cards to DOM
 updateEventCards()
@@ -147,7 +188,7 @@ function interval(){
 function addToggleCategory(category) {
     let clone = categoryTemplate.content.cloneNode(true)
 
-    clone.querySelector(".categories-label").innerHTML = category.name
+    clone.querySelector(".categories-label").innerHTML = getTranslation('categories', category.key)
     clone.querySelector(".tgl-category-element").style.borderColor = category.color
     clone.querySelector(".tgl-container").id = category.key
     clone.querySelector(".category-checkbox").id = `catTgl-${category.key}`
@@ -173,7 +214,7 @@ function addToggleElement(parentEvent) {
     let clone = toggleTemplate.content.cloneNode(true)
     let tglList = document.getElementById(parentEvent.categoryKey)
 
-    clone.querySelector(".tgl-label").textContent = parentEvent.name
+    clone.querySelector(".tgl-label").textContent = getTranslation('events', parentEvent.key)
     clone.querySelector(".visibility-checkbox").checked = getVisibilityFromLocalStorage(parentEvent.key)
     clone.querySelector(".visibility-checkbox").id = `vcb-${parentEvent.key}`
     clone.querySelector(".visibility-checkbox").classList.add(`vcb-${parentEvent.categoryKey}`)
