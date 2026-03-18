@@ -62,14 +62,14 @@
       "color": "rgba(46, 101, 125, 1)"
     },
     {
-      "key": "Festivals",
-      "name": "Festivals",
+      "key": "festivals",
+      "name": "festivals",
       "color": "rgba(255, 126, 29, 0.4)"
     }
   ],
   "parentEvents": [
     {
-      "key": "TyriaDayBreak",
+      "key": "tyriaDayBreak",
       "categoryKey":"general",
       "name": "Tyria Day Break",
       "wiki": "https://wiki.guildwars2.com/wiki/Day_and_night",
@@ -77,7 +77,7 @@
       "durationMS": 1
     },
     {
-      "key": "TyriaNightfall",
+      "key": "tyriaNightfall",
       "categoryKey":"general",
       "name": "Tyria Nightfall",
       "wiki": "https://wiki.guildwars2.com/wiki/Day_and_night",
@@ -85,7 +85,7 @@
       "durationMS": 1
     },
     {
-      "key": "ServerReset",
+      "key": "serverReset",
       "categoryKey":"general",
       "name": "Server Reset",
       "wiki": "https://wiki.guildwars2.com/wiki/Server_reset",
@@ -93,7 +93,7 @@
       "durationMS": 1
     },
     {
-      "key": "ShadowBehemoth",
+      "key": "shadowBehemoth",
       "categoryKey": "core",
       "name": "Shadow Behemoth",
       "wiki": "https://wiki.guildwars2.com/wiki/Shadow_Behemoth",
@@ -101,7 +101,7 @@
       "durationMS": 60000
     },
     {
-      "key": "FireElemental",
+      "key": "fireElemental",
       "categoryKey": "core",
       "name": "Fire Elemental",
       "wiki": "https://wiki.guildwars2.com/wiki/Fire_Elemental",
@@ -109,7 +109,7 @@
       "durationMS": 60000
     },
     {
-      "key": "SvanirShamanChief",
+      "key": "svanirShamanChief",
       "categoryKey": "core",
       "name": "Svanir Shaman Chief",
       "wiki": "https://wiki.guildwars2.com/wiki/Champion_Svanir_Shaman_Chief",
@@ -117,7 +117,7 @@
       "durationMS": 60000
     },
     {
-      "key": "GreatJungleWurm",
+      "key": "greatJungleWurm",
       "categoryKey": "core",
       "name": "Great Jungle Wurm",
       "wiki": "https://wiki.guildwars2.com/wiki/Great_Jungle_Wurm",
@@ -125,7 +125,7 @@
       "durationMS": 60000
     },
     {
-      "key": "GolemMarkII",
+      "key": "golemMarkII",
       "categoryKey": "core",
       "name": "Golem Mark II",
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_Inquest's_golem_Mark_II",
@@ -133,7 +133,7 @@
       "durationMS": 60000
     },
     {
-      "key": "ClawofJormag",
+      "key": "clawOfJormag",
       "categoryKey": "core",
       "name": "Claw of Jormag",
       "wiki": "https://wiki.guildwars2.com/wiki/Claw_of_Jormag",
@@ -141,7 +141,7 @@
       "durationMS": 60000
     },
     {
-      "key": "AdmiralTaidhaCovington",
+      "key": "admiralTaidhaCovington",
       "categoryKey": "core",
       "name": "Admiral Taidha Covington",
       "wiki": "https://wiki.guildwars2.com/wiki/Admiral_Taidha_Covington",
@@ -149,15 +149,15 @@
       "durationMS": 60000
     },
     {
-      "key": "Megadestroyer",
+      "key": "megadestroyer",
       "categoryKey": "core",
-      "name": "Megadestroyer",
+      "name": "megadestroyer",
       "wiki": "https://wiki.guildwars2.com/wiki/Megadestroyer",
       "fastF": "https://fast.farming-community.eu/open-world/meta/megadestroyer",
       "durationMS": 60000
     },
     {
-      "key": "TheShatterer",
+      "key": "theShatterer",
       "categoryKey": "core",
       "name": "The Shatterer",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Shatterer",
@@ -165,7 +165,7 @@
       "durationMS": 60000
     },
     {
-      "key": "ModniirUlgoth",
+      "key": "modniirUlgoth",
       "categoryKey": "core",
       "name": "Modniir Ulgoth",
       "wiki": "https://wiki.guildwars2.com/wiki/Modniir_Ulgoth",
@@ -173,15 +173,15 @@
       "durationMS": 60000
     },
     {
-      "key": "Tequatl",
+      "key": "tequatl",
       "categoryKey": "core",
-      "name": "Tequatl",
+      "name": "tequatl",
       "wiki": "https://wiki.guildwars2.com/wiki/Tequatl_the_Sunless",
       "fastF": "https://fast.farming-community.eu/open-world/meta/tequatl-the-sunless",
       "durationMS": 60000
     },
     {
-      "key": "KarkaQueen",
+      "key": "karkaQueen",
       "categoryKey": "core",
       "name": "Karka Queen",
       "wiki": "https://wiki.guildwars2.com/wiki/Legendary_Karka_Queen",
@@ -189,7 +189,7 @@
       "durationMS": 60000
     },
     {
-      "key": "TripleTrouble",
+      "key": "tripleTrouble",
       "categoryKey": "core",
       "name": "Triple Trouble",
       "wiki": "https://wiki.guildwars2.com/wiki/Triple_Trouble",
@@ -197,7 +197,7 @@
       "durationMS": 60000
     },
     {
-      "key": "LeyLineAnomaly",
+      "key": "leyLineAnomaly",
       "categoryKey": "core",
       "name": "Ley-Line Anomaly",
       "wiki": "https://wiki.guildwars2.com/wiki/Legendary_Ley-Line_Anomaly",
@@ -205,7 +205,7 @@
       "durationMS": 60000
     },
     {
-      "key": "TheTwistedMarionette",
+      "key": "theTwistedMarionette",
       "categoryKey": "ls1",
       "name": "The Twisted Marionette",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Twisted_Marionette",
@@ -213,7 +213,7 @@
       "durationMS": 60000
     },
     {
-      "key": "DefeatScarlet'sminions",
+      "key": "defeatScarletsMinions",
       "categoryKey": "ls1",
       "name": "Defeat Scarlet's Minions",
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_minions_of_Scarlet_Briar",
@@ -221,7 +221,7 @@
       "durationMS": 60000
     },
     {
-      "key": "BattleForLion'sArch",
+      "key": "battleForLionsArch",
       "categoryKey": "ls1",
       "name": "Battle For Lion's Arch",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Battle_For_Lion's_Arch",
@@ -229,7 +229,7 @@
       "durationMS": 60000
     },
     {
-      "key": "TowerofNightmares",
+      "key": "towerOfNightmares",
       "categoryKey": "ls1",
       "name": "Tower of Nightmares",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Tower_of_Nightmares_(meta_event)",
@@ -237,41 +237,41 @@
       "durationMS": 60000
     },
     {
-      "key": "Sandstorm",
+      "key": "sandstorm",
       "categoryKey": "ls2",
-      "name": "Sandstorm",
+      "name": "sandstorm",
       "wiki": "https://wiki.guildwars2.com/wiki/Sandstorm!",
       "fastF": "",
       "durationMS": 60000
     },
     {
-      "key": "NightBosses",
+      "key": "nightBosses",
       "categoryKey": "hot",
       "name": "Night Bosses",
-      "note": "Matriarch",
+      "note": "matriarch",
       "wiki": "https://wiki.guildwars2.com/wiki/Night_and_the_Enemy",
       "fastF": "https://fast.farming-community.eu/open-world/meta/legendary-matriarch",
       "durationMS": 60000
     },
     {
-      "key": "Octovine",
+      "key": "octovine",
       "categoryKey": "hot",
-      "name": "Octovine",
+      "name": "octovine",
       "wiki": "https://wiki.guildwars2.com/wiki/Battle_in_Tarir",
       "fastF": "https://fast.farming-community.eu/open-world/meta/octovine",
       "durationMS": 480000
     },
     {
-      "key": "DefendingTarir",
+      "key": "defendingTarir",
       "categoryKey": "hot",
       "name": "Defending Tarir",
-      "note": "Pylons",
+      "note": "pylons",
       "wiki": "https://wiki.guildwars2.com/wiki/Defending_Tarir",
       "fastF": "",
       "durationMS": 4500000
     },
     {
-      "key": "ChakGerent",
+      "key": "chakGerent",
       "categoryKey": "hot",
       "name": "Chak Gerent",
       "wiki": "https://wiki.guildwars2.com/wiki/King_of_the_Jungle",
@@ -279,7 +279,7 @@
       "durationMS": 900000
     },
     {
-      "key": "Dragon'sStand",
+      "key": "dragonsStand",
       "categoryKey": "hot",
       "name": "Dragon's Stand",
       "wiki": "https://wiki.guildwars2.com/wiki/Advancing_on_the_Blighting_Towers",
@@ -287,16 +287,16 @@
       "durationMS": 60000
     },
     {
-      "key": "Noran'sHomestead",
+      "key": "noransHomestead",
       "categoryKey": "ls3",
       "name": "Noran's Homestead",
-      "note": "Immelhoof",
+      "note": "immelhoof",
       "wiki": "https://wiki.guildwars2.com/wiki/White_Mantle_Control:_Noran%27s_Homestead",
       "fastF": "",
       "durationMS": 60000
     },
     {
-      "key": "NewLoamhurst",
+      "key": "newLoamhurst",
       "categoryKey": "ls3",
       "name": "New Loamhurst",
       "wiki": "https://wiki.guildwars2.com/wiki/White_Mantle_Control:_New_Loamhurst",
@@ -304,7 +304,7 @@
       "durationMS": 60000
     },
     {
-      "key": "Saidra'sHaven",
+      "key": "saidrasHaven",
       "categoryKey": "ls3",
       "name": "Saidra's Haven",
       "wiki": "https://wiki.guildwars2.com/wiki/White_Mantle_Control:_Saidra's_Haven",
@@ -312,16 +312,16 @@
       "durationMS": 60000
     },
     {
-      "key": "CasinoBlitz",
+      "key": "casinoBlitz",
       "categoryKey": "pof",
       "name": "Casino Blitz",
-      "note": "Piñata pre Meta",
+      "note": "pinataPreMeta",
       "wiki": "https://wiki.guildwars2.com/wiki/Casino_Blitz",
       "fastF": "",
       "durationMS": 960000
     },
     {
-      "key": "Pinata",
+      "key": "pinata",
       "categoryKey": "pof",
       "name": "Piñata",
       "wiki": "https://wiki.guildwars2.com/wiki/Casino_Blitz",
@@ -329,7 +329,7 @@
       "durationMS": 60000
     },
     {
-      "key": "BuriedTreasure",
+      "key": "buriedTreasure",
       "categoryKey": "pof",
       "name": "Buried Treasure",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Search_for_Buried_Treasure",
@@ -337,7 +337,7 @@
       "durationMS": 1200000
     },
     {
-      "key": "ThePathtoAscension",
+      "key": "thePathToAscension",
       "categoryKey": "pof",
       "name": "The Path to Ascension",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Path_to_Ascension",
@@ -345,15 +345,15 @@
       "durationMS": 720000
     },
     {
-      "key": "Doppelganger",
+      "key": "doppelganger",
       "categoryKey": "pof",
-      "name": "Doppelganger",
+      "name": "doppelganger",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Path_to_Ascension",
       "fastF": "https://fast.farming-community.eu/open-world/meta/elon-riverlands-doppelganger",
       "durationMS": 60000
     },
     {
-      "key": "MawsofTorment",
+      "key": "mawsOfTorment",
       "categoryKey": "pof",
       "name": "Maws of Torment",
       "wiki": "https://wiki.guildwars2.com/wiki/Maws_of_Torment",
@@ -361,15 +361,15 @@
       "durationMS": 60000
     },
     {
-      "key": "Junundu",
+      "key": "junundu",
       "categoryKey": "pof",
-      "name": "Junundu",
+      "name": "junundu",
       "wiki": "https://wiki.guildwars2.com/wiki/Junundu_Rising",
       "fastF": "https://fast.farming-community.eu/open-world/meta/junundu-rising",
       "durationMS": 60000
     },
     {
-      "key": "ForgedwithFire",
+      "key": "forgedWithFire",
       "categoryKey": "pof",
       "name": "Forged with Fire",
       "wiki": "https://wiki.guildwars2.com/wiki/Forged_with_Fire",
@@ -377,7 +377,7 @@
       "durationMS": 420000
     },
     {
-      "key": "Serpents'Ire",
+      "key": "serpentsIre",
       "categoryKey": "pof",
       "name": "Serpents' Ire",
       "wiki": "https://wiki.guildwars2.com/wiki/Serpents'_Ire",
@@ -385,24 +385,24 @@
       "durationMS": 60000
     },
     {
-      "key": "Palawadan",
+      "key": "palawadan",
       "categoryKey": "ls4",
-      "name": "Palawadan",
+      "name": "palawadan",
       "wiki": "https://wiki.guildwars2.com/wiki/Palawadan,_Jewel_of_Istan_(meta_event)",
       "fastF": "",
       "durationMS": 60000
     },
     {
-      "key": "Escorts",
+      "key": "escorts",
       "categoryKey": "ls4",
       "name": "Dangerous Prey",
-      "note": "DBS pre Meta",
+      "note": "dbsPreMeta",
       "wiki": "https://wiki.guildwars2.com/wiki/Dangerous_Prey",
       "fastF": "",
       "durationMS": 900000
     },
     {
-      "key": "Death-BrandedShatterer",
+      "key": "deathBrandedShatterer",
       "categoryKey": "ls4",
       "name": "Death-Branded Shatterer",
       "wiki": "https://wiki.guildwars2.com/wiki/Destroy_the_Death-Branded_Shatterer",
@@ -410,7 +410,7 @@
       "durationMS": 180000
     },
     {
-      "key": "ThunderheadKeep",
+      "key": "thunderheadKeep",
       "categoryKey": "ls4",
       "name": "Thunderhead Keep",
       "wiki": "https://wiki.guildwars2.com/wiki/Thunderhead_Keep_(meta_event)",
@@ -418,7 +418,7 @@
       "durationMS": 660000
     },
     {
-      "key": "TheOilFloes",
+      "key": "theOilFloes",
       "categoryKey": "ls4",
       "name": "The Oil Floes",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Oil_Floes",
@@ -426,7 +426,7 @@
       "durationMS": 720000
     },
     {
-      "key": "SacredFlame",
+      "key": "sacredFlame",
       "categoryKey": "ls5",
       "name": "Sacred Flame",
       "wiki": "https://wiki.guildwars2.com/wiki/Ceremony_of_the_Sacred_Flame",
@@ -434,7 +434,7 @@
       "durationMS": 60000
     },
     {
-      "key": "DoomloreShrine",
+      "key": "doomloreShrine",
       "categoryKey": "ls5",
       "name": "Doomlore Shrine",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Haunting_of_Doomlore_Shrine",
@@ -442,7 +442,7 @@
       "durationMS": 60000
     },
     {
-      "key": "OozePit",
+      "key": "oozePit",
       "categoryKey": "ls5",
       "name": "Ooze Pit",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Ooze_Pit_Trials",
@@ -450,7 +450,7 @@
       "durationMS": 60000
     },
     {
-      "key": "MetalConcert",
+      "key": "metalConcert",
       "categoryKey": "ls5",
       "name": "Metal Concert",
       "wiki": "https://wiki.guildwars2.com/wiki/A_Concert_for_the_Ages",
@@ -458,16 +458,16 @@
       "durationMS": 60000
     },
     {
-      "key": "StormsofWinter",
+      "key": "stormsOfWinter",
       "categoryKey": "ls5",
       "name": "Storms of Winter",
-      "note": "Icebrood pre Meta",
+      "note": "icebroodPreMeta",
       "wiki": "https://wiki.guildwars2.com/wiki/Storms_of_Winter",
       "fastF": "https://fast.farming-community.eu/open-world/meta/storms-of-winter",
       "durationMS": 1200000
     },
     {
-      "key": "IcebroodChampions",
+      "key": "icebroodChampions",
       "categoryKey": "ls5",
       "name": "Icebrood Champions",
       "wiki": "https://wiki.guildwars2.com/wiki/Storms_of_Winter",
@@ -475,23 +475,23 @@
       "durationMS": 120000
     },
     {
-      "key": "Drakkar",
+      "key": "drakkar",
       "categoryKey": "ls5",
-      "name": "Drakkar",
+      "name": "drakkar",
       "wiki": "https://wiki.guildwars2.com/wiki/Champion_of_the_Ice_Dragon",
       "fastF": "https://fast.farming-community.eu/open-world/meta/drakkar",
       "durationMS": 900000
     },
     {
-      "key": "Dragonstorm",
+      "key": "dragonstorm",
       "categoryKey": "ls5",
-      "name": "Dragonstorm",
+      "name": "dragonstorm",
       "wiki": "https://wiki.guildwars2.com/wiki/Dragonstorm",
       "fastF": "https://fast.farming-community.eu/open-world/meta/dragonstorm",
       "durationMS": 720000
     },
     {
-      "key": "AetherbladeAssault",
+      "key": "aetherbladeAssault",
       "categoryKey": "eod",
       "name": "Aetherblade Assault",
       "wiki": "https://wiki.guildwars2.com/wiki/Aetherblade_Assault",
@@ -499,7 +499,7 @@
       "durationMS": 1500000
     },
     {
-      "key": "KainengBlackout",
+      "key": "kainengBlackout",
       "categoryKey": "eod",
       "name": "Kaineng Blackout",
       "wiki": "https://wiki.guildwars2.com/wiki/Kaineng_Blackout",
@@ -507,7 +507,7 @@
       "durationMS": 1500000
     },
     {
-      "key": "GangWar",
+      "key": "gangWar",
       "categoryKey": "eod",
       "name": "Gang War",
       "wiki": "https://wiki.guildwars2.…The_Gang_War_of_Echovald",
@@ -515,15 +515,15 @@
       "durationMS": 1500000
     },
     {
-      "key": "Aspenwood",
+      "key": "aspenwood",
       "categoryKey": "eod",
-      "name": "Aspenwood",
+      "name": "aspenwood",
       "wiki": "https://wiki.guildwars2.com/wiki/Use_the_siege_turtles_to_destroy_the_shield_generators_as_you_fight_through_the_fort",
       "fastF": "https://fast.farming-community.eu/open-world/meta/echovald-wilds-aspenwood",
       "durationMS": 1800000
     },
     {
-      "key": "Dragon'sEnd",
+      "key": "dragonsEnd",
       "categoryKey": "eod",
       "name": "Dragon's End",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Battle_for_the_Jade_Sea",
@@ -531,7 +531,7 @@
       "durationMS": 1800000
     },
     {
-      "key": "JadeMaw",
+      "key": "jadeMaw",
       "categoryKey": "eod",
       "name": "Jade Maw",
       "wiki": "https://wiki.guildwars2.com/wiki/Defeat_the_Void-corrupted_Jade_Maw",
@@ -539,7 +539,7 @@
       "durationMS": 60000
     },
     {
-      "key": "Wizard'sTower",
+      "key": "wizardsTower",
       "categoryKey": "soto",
       "name": "Unlock the Wizard's Tower",
       "wiki": "https://wiki.guildwars2.com/wiki/Unlocking_the_Wizard's_Tower",
@@ -547,7 +547,7 @@
       "durationMS": 1200000
     },
     {
-      "key": "TargetPractice",
+      "key": "targetPractice",
       "categoryKey": "soto",
       "name": "Target Practice",
       "wiki": "https://wiki.guildwars2.com/wiki/Skyscale_Target_Practice_in_the_Wizard's_Tower",
@@ -555,7 +555,7 @@
       "durationMS": 3300000
     },
     {
-      "key": "FlybyNight",
+      "key": "flyByNight",
       "categoryKey": "soto",
       "name": "Fly by Night",
       "wiki": "https://wiki.guildwars2.com/wiki/Wizard's_Tower:_Fly_by_Night",
@@ -563,7 +563,7 @@
       "durationMS": 1500000
     },
     {
-      "key": "DefenseofAmnitas",
+      "key": "defenseOfAmnytas",
       "categoryKey": "soto",
       "name": "Defense of Amnytas",
       "wiki": "https://wiki.guildwars2.com/wiki/The_Defense_of_Amnytas",
@@ -571,7 +571,7 @@
       "durationMS": 1200000
     },
     {
-      "key": "Convergence:InnerNayos",
+      "key": "convergenceInnerNayos",
       "categoryKey": "soto",
       "name": "Convergence: Inner Nayos",
       "wiki": "https://wiki.guildwars2.com/wiki/Convergences",
@@ -579,7 +579,7 @@
       "durationMS": 900000
     },
     {
-      "key": "MistsandMonsters",
+      "key": "mistsAndMonsters",
       "categoryKey": "janthir",
       "name": "Of Mists and Monsters",
       "wiki": "https://wiki.guildwars2.…ki/Of_Mists_and_Monsters",
@@ -587,7 +587,7 @@
       "durationMS": 900000
     },
     {
-      "key": "Convergence:MountBalrior",
+      "key": "convergenceMountBalrior",
       "categoryKey": "janthir",
       "name": "Convergence: Mount Balrior",
       "wiki": "https://wiki.guildwars2.com/wiki/Convergence:_Mount_Balrior",
@@ -603,405 +603,405 @@
 
   "events": [
     {
-      "parentKey":  "TyriaDayBreak",
+      "parentKey":  "tyriaDayBreak",
       "start": ["0:30", "2:30", "4:30", "6:30", "8:30", "10:30", "12:30", "14:30", "16:30", "18:30", "20:30", "22:30"],
-      "map": "Tyria",
+      "map": "tyria",
       "waypoint": ""
     },
     {
-      "parentKey": "TyriaNightfall" ,
+      "parentKey": "tyriaNightfall" ,
       "start": ["1:45", "3:45", "5:45", "7:45", "9:45", "11:45", "13:45", "15:45", "17:45", "19:45", "21:45", "23:45"],
-      "map": "Tyria",
+      "map": "tyria",
       "waypoint": ""
     },
     {
-      "parentKey":  "ServerReset",
+      "parentKey":  "serverReset",
       "start": ["00:00"],
-      "map": "Tyria",
+      "map": "tyria",
       "waypoint": ""
     },
     {
-      "parentKey": "ShadowBehemoth" ,
+      "parentKey": "shadowBehemoth" ,
       "start": ["1:45", "3:45", "5:45", "7:45", "9:45", "11:45", "13:45", "15:45", "17:45", "19:45", "21:45", "23:45"],
-      "map": "Queensdale",
+      "map": "queensdale",
       "waypoint": "[&BPcAAAA=]"
     },
     {
-      "parentKey":  "FireElemental",
+      "parentKey":  "fireElemental",
       "start": ["0:45", "2:45", "4:45", "6:45", "8:45", "10:45", "12:45", "14:45", "16:45", "18:45", "20:45", "22:45"],
-      "map": "Metrica Province",
+      "map": "metricaProvince",
       "waypoint": "[&BEcAAAA=]"
     },
     {
-      "parentKey": "SvanirShamanChief" ,
+      "parentKey": "svanirShamanChief" ,
       "start": ["0:15", "2:15", "4:15", "6:15", "8:15", "10:15", "12:15", "14:15", "16:15", "18:15", "20:15", "22:15"],
-      "map": "Wayfarer Foothills",
+      "map": "wayfarerFoothills",
       "waypoint": "[&BH4BAAA=]"
     },
     {
-      "parentKey":  "GreatJungleWurm",
+      "parentKey":  "greatJungleWurm",
       "start": ["1:15", "3:15", "5:15", "7:15", "9:15", "11:15", "13:15", "15:15", "17:15", "19:15", "21:15", "23:15"],
-      "map": "Caledon Forest",
+      "map": "caledonForest",
       "waypoint": "[&BEEFAAA=]"
     },
     {
-      "parentKey": "GolemMarkII" ,
+      "parentKey": "golemMarkII" ,
       "start": ["2:00", "5:00", "8:00", "11:00", "14:00", "17:00", "20:00", "23:00"],
-      "map": "Mount Maelstrom",
+      "map": "mountMaelstrom",
       "waypoint": "[&BNQCAAA=]"
     },
     {
-      "parentKey": "ClawofJormag" ,
+      "parentKey": "clawOfJormag" ,
       "start": ["2:30", "5:30", "8:30", "11:30", "14:30", "17:30", "20:30", "23:30"],
-      "map": "Frostgorge Sound",
+      "map": "frostgorgeSound",
       "waypoint": "[&BH0CAAA=]"
     },
     {
-      "parentKey": "AdmiralTaidhaCovington" ,
+      "parentKey": "admiralTaidhaCovington" ,
       "start": ["00:00", "03:00", "06:00", "09:00", "12:00", "15:00", "18:00", "21:00"],
-      "map": "Bloodtide Coast",
+      "map": "bloodtideCoast",
       "waypoint": "[&BKgBAAA=]"
     },
     {
-      "parentKey": "Megadestroyer" ,
+      "parentKey": "megadestroyer" ,
       "start": ["00:30", "03:30", "06:30", "09:30", "12:30", "15:30", "18:30", "21:30"],
-      "map": "Mount Maelstrom",
+      "map": "mountMaelstrom",
       "waypoint": "[&BM0CAAA=]"
     },
     {
-      "parentKey": "TheShatterer" ,
+      "parentKey": "theShatterer" ,
       "start": ["1:00", "4:00", "7:00", "10:00", "13:00", "16:00", "19:00", "22:00"],
-      "map": "Blazeridge Steppes",
+      "map": "blazeridgeSteppes",
       "waypoint": "[&BE4DAAA=]"
     },
     {
-      "parentKey": "ModniirUlgoth",
+      "parentKey": "modniirUlgoth",
       "start": ["1:30", "4:30", "7:30", "10:30", "13:30", "16:30", "19:30", "22:30"],
-      "map": "Harathi Hinterlands",
+      "map": "harathiHinterlands",
       "waypoint": "[&BLAAAAA=]"
     },
     {
-      "parentKey": "Tequatl",
+      "parentKey": "tequatl",
       "start": ["0:00", "3:00", "7:00", "11:30", "16:00", "19:00"],
-      "map": "Sparkfly Fen",
+      "map": "sparkflyFen",
       "waypoint": "[&BNABAAA=]"
     },
     {
-      "parentKey": "KarkaQueen",
+      "parentKey": "karkaQueen",
       "start": ["2:00", "6:00", "10:30", "15:00", "18:00", "23:00"],
-      "map": "Southsun Cove",
+      "map": "southsunCove",
       "waypoint": "[&BNcGAAA=]"
     },
     {
-      "parentKey": "TripleTrouble",
+      "parentKey": "tripleTrouble",
       "start": ["1:00", "4:00", "8:00", "12:30", "17:00", "20:00"],
-      "map": "Bloodtide Coast",
+      "map": "bloodtideCoast",
       "waypoint": "[&BKoBAAA=]"
     },
     {
-      "parentKey": "LeyLineAnomaly",
+      "parentKey": "leyLineAnomaly",
       "start": ["0:20", "6:20", "12:20", "18:20"],
-      "map": "Timberline Fals",
+      "map": "timberlineFalls",
       "waypoint": "[&BEwCAAA=]"
     },
     {
-      "parentKey": "LeyLineAnomaly",
+      "parentKey": "leyLineAnomaly",
       "start": ["4:20", "01:20", "10:20", "16:20", "22:20"],
-      "map": "Gendaran Fields",
+      "map": "gendarranFields",
       "waypoint": "[&BOQAAAA=]"
     },
     {
-      "parentKey": "LeyLineAnomaly",
+      "parentKey": "leyLineAnomaly",
       "start": ["2:20", "8:20", "14:20", "20:20"],
-      "map": "Iron Marches",
+      "map": "ironMarches",
       "waypoint": "[&BOcBAAA=]"
     },
     {
-      "parentKey": "DefeatScarlet'sminions",
+      "parentKey": "defeatScarletsMinions",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "Gendarran Fields",
+      "map": "gendarranFields",
       "waypoint": "[&BOQAAAA=]"
     },
     {
-      "parentKey": "TheTwistedMarionette",
+      "parentKey": "theTwistedMarionette",
       "start": ["0:00", "2:00", "4:00", "6:00", "8:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"],
-      "map": "Eye of the North",
+      "map": "eyeOfTheNorth",
       "waypoint": "[&BAkMAAA=]"
     },
     {
-      "parentKey": "BattleForLion'sArch",
+      "parentKey": "battleForLionsArch",
       "start": ["0:30", "2:30", "4:30", "6:30", "8:30", "10:30", "12:30", "14:30", "16:30", "18:30", "20:30", "22:30"],
-      "map": "Eye of the North",
+      "map": "eyeOfTheNorth",
       "waypoint": "[&BAkMAAA=]"
     },
     {
-      "parentKey": "TowerofNightmares",
+      "parentKey": "towerOfNightmares",
       "start": ["1:30", "3:30", "5:30", "7:30", "9:30", "11:30", "13:30", "15:30", "17:30", "19:30", "21:30", "23:30"],
-      "map": "Eye of the North",
+      "map": "eyeOfTheNorth",
       "waypoint": "[&BAkMAAA=]"
     },
     {
-      "parentKey": "Sandstorm",
+      "parentKey": "sandstorm",
       "start": ["1:40", "3:40", "5:40", "7:40", "9:40", "11:40", "13:40", "15:40", "17:40", "19:40", "21:40", "23:40", "0:40", "2:40", "4:40", "6:40", "8:40", "10:40", "12:40", "14:40", "16:40", "18:40", "20:40", "22:40"],
-      "map": "Dry Top",
+      "map": "dryTop",
       "waypoint": "[&BIAHAAA=]"
     },
     {
-      "parentKey": "NightBosses",
+      "parentKey": "nightBosses",
       "start": ["0:10", "2:10", "4:10", "6:10", "8:10", "10:10", "12:10", "14:10", "16:10", "18:10", "20:10", "22:10"],
-      "map": "Verdant Brink",
+      "map": "verdantBrink",
       "waypoint": "[&BAgIAAA=]"
     },
     {
-      "parentKey": "Octovine",
+      "parentKey": "octovine",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "Auric Basin",
+      "map": "auricBasin",
       "waypoint": "[&BN0HAAA=] - [&BGwIAAA=] - [&BAIIAAA=] - [&BAYIAAA=]"
     },
     {
-      "parentKey": "DefendingTarir",
+      "parentKey": "defendingTarir",
       "start": ["1:30", "3:30", "5:30", "7:30", "9:30", "11:30", "13:30", "15:30", "17:30", "19:30", "21:30", "23:30"],
-      "map": "Auric Basin",
+      "map": "auricBasin",
       "waypoint": "[&BN0HAAA=]"
     },
     {
-      "parentKey": "ChakGerent",
+      "parentKey": "chakGerent",
       "start": ["0:30", "2:30", "4:30", "6:30", "8:30", "10:30", "12:30", "14:30", "16:30", "18:30", "20:30", "22:30"],
-      "map": "Tangled Depths",
+      "map": "tangledDepths",
       "waypoint": "[&BPUHAAA=]"
     },
     {
-      "parentKey": "Dragon'sStand",
+      "parentKey": "dragonsStand",
       "start": ["1:30", "3:30", "5:30", "7:30", "9:30", "11:30", "13:30", "15:30", "17:30", "19:30", "21:30", "23:30"],
-      "map": "Dragon's Stand",
+      "map": "dragonsStand",
       "waypoint": "[&BBAIAAA=]"
     },
     {
-      "parentKey": "Noran'sHomestead",
+      "parentKey": "noransHomestead",
       "start": ["0:30", "2:30", "4:30", "6:30", "8:30", "10:30", "12:30", "14:30", "16:30", "18:30", "20:30", "22:30"],
-      "map": "Lake Doric",
+      "map": "lakeDoric",
       "waypoint": "[&BLAJAAA=]"
     },
     {
-      "parentKey": "NewLoamhurst",
+      "parentKey": "newLoamhurst",
       "start": ["1:45", "3:45", "5:45", "7:45", "9:45", "11:45", "13:45", "15:45", "17:45", "19:45", "21:45", "23:45"],
-      "map": "Lake Doric",
+      "map": "lakeDoric",
       "waypoint": "[&BLQJAAA=]"
     },
     {
-      "parentKey": "Saidra'sHaven",
+      "parentKey": "saidrasHaven",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "Lake Doric",
+      "map": "lakeDoric",
       "waypoint": "[&BK0JAAA=]"
     },
     {
-      "parentKey": "CasinoBlitz",
+      "parentKey": "casinoBlitz",
       "start": ["0:05", "2:05", "4:05", "6:05", "8:05", "10:05", "12:05", "14:05", "16:05", "18:05", "20:05", "22:05"],
-      "map": "Crystal Oasis",
+      "map": "crystalOasis",
       "waypoint": "[&BLsKAAA=]"
     },
     {
-      "parentKey": "Pinata",
+      "parentKey": "pinata",
       "start": ["0:21", "2:21", "4:21", "6:21", "8:21", "10:21", "12:21", "14:21", "16:21", "18:21", "20:21", "22:21"],
-      "map": "Crystal Oasis",
+      "map": "crystalOasis",
       "waypoint": "[&BLsKAAA=]"
     },
     {
-      "parentKey": "BuriedTreasure",
+      "parentKey": "buriedTreasure",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "Desert Highlands",
+      "map": "desertHighlands",
       "waypoint": "[&BGsKAAA=]"
     },
     {
-      "parentKey": "ThePathtoAscension",
+      "parentKey": "thePathToAscension",
       "start": ["1:30", "3:30", "5:30", "7:30", "9:30", "11:30", "13:30", "15:30", "17:30", "19:30", "21:30", "23:30"],
-      "map": "Elon Riverlands",
+      "map": "elonRiverlands",
       "waypoint": "[&BFMKAAA=]"
     },
     {
-      "parentKey": "Doppelganger",
+      "parentKey": "doppelganger",
       "start": ["1:55", "3:55", "5:55", "7:55", "9:55", "11:55", "13:55", "15:55", "17:55", "19:55", "21:55", "23:55"],
-      "map": "Elon Riverlands",
+      "map": "elonRiverlands",
       "waypoint": "[&BFMKAAA=]"
     },
     {
-      "parentKey": "MawsofTorment",
+      "parentKey": "mawsOfTorment",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "The Desolation",
+      "map": "theDesolation",
       "waypoint": "[&BKMKAAA=]"
     },
     {
-      "parentKey": "Junundu",
+      "parentKey": "junundu",
       "start": ["0:30", "2:30", "4:30", "6:30", "8:30", "10:30", "12:30", "14:30", "16:30", "18:30", "20:30", "22:30","1:30", "3:30", "5:30", "7:30", "9:30", "11:30", "13:30", "15:30", "17:30", "19:30", "21:30", "23:30"],
-      "map": "The Desolation",
+      "map": "theDesolation",
       "waypoint": "[&BMEKAAA=]"
     },
     {
-      "parentKey": "ForgedwithFire",
+      "parentKey": "forgedWithFire",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00", "0:00", "2:00", "4:00", "6:00", "8:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"],
-      "map": "Domain of Vabbi",
+      "map": "domainOfVabbi",
       "waypoint": "[&BO0KAAA=]"
     },
     {
-      "parentKey": "Serpents'Ire",
+      "parentKey": "serpentsIre",
       "start": ["0:30", "2:30", "4:30", "6:30", "8:30", "10:30", "12:30", "14:30", "16:30", "18:30", "20:30", "22:30"],
-      "map": "Domain of Vabbi",
+      "map": "domainOfVabbi",
       "waypoint": "[&BHQKAAA=]"
     },
     {
-      "parentKey": "Palawadan",
+      "parentKey": "palawadan",
       "start": ["1:45", "3:45", "5:45", "7:45", "9:45", "11:45", "13:45", "15:45", "17:45", "19:45", "21:45", "23:45"],
-      "map": "Domain of Istan",
+      "map": "domainOfIstan",
       "waypoint": "[&BAkLAAA=]"
     },
     {
-      "parentKey": "Escorts",
+      "parentKey": "escorts",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "Jahai Bluffs",
+      "map": "jahaiBluffs",
       "waypoint": "[&BJMLAAA=]"
     },
     {
-      "parentKey": "Death-BrandedShatterer",
+      "parentKey": "deathBrandedShatterer",
       "start": ["1:15", "3:15", "5:15", "7:15", "9:15", "11:15", "13:15", "15:15", "17:15", "19:15", "21:15", "23:15"],
-      "map": "Jahai Bluffs",
+      "map": "jahaiBluffs",
       "waypoint": "[&BJMLAAA=]"
     },
     {
-      "parentKey": "ThunderheadKeep",
+      "parentKey": "thunderheadKeep",
       "start": ["1:45", "3:45", "5:45", "7:45", "9:45", "11:45", "13:45", "15:45", "17:45", "19:45", "21:45", "23:45"],
-      "map": "Thunderhead Peaks",
+      "map": "thunderheadPeaks",
       "waypoint": "[&BLsLAAA=]"
     },
     {
-      "parentKey": "TheOilFloes",
+      "parentKey": "theOilFloes",
       "start": ["1:45", "3:45", "5:45", "7:45", "9:45", "11:45", "13:45", "15:45", "17:45", "19:45", "21:45", "23:45", "0:45", "2:45", "4:45", "6:45", "8:45", "10:45", "12:45", "14:45", "16:45", "18:45", "20:45", "22:45"],
-      "map": "Thunderhead Peaks",
+      "map": "thunderheadPeaks",
       "waypoint": "[&BKYLAAA=]"
     },
     {
-      "parentKey": "SacredFlame",
+      "parentKey": "sacredFlame",
       "start": ["0:10", "2:10", "4:10", "6:10", "8:10", "10:10", "12:10", "14:10", "16:10", "18:10", "20:10", "22:10"],
-      "map": "Grothmar Valley",
+      "map": "grothmarValley",
       "waypoint": "[&BA4MAAA=]"
     },
     {
-      "parentKey": "DoomloreShrine",
+      "parentKey": "doomloreShrine",
       "start": ["0:40", "2:40", "4:40", "6:40", "8:40", "10:40", "12:40", "14:40", "16:40", "18:40", "20:40", "22:40"],
-      "map": "Grothmar Valley",
+      "map": "grothmarValley",
       "waypoint": "[&BA4MAAA=]"
     },
     {
-      "parentKey": "MetalConcert",
+      "parentKey": "metalConcert",
       "start": ["1:40", "3:40", "5:40", "7:40", "9:40", "11:40", "13:40", "15:40", "17:40", "19:40", "21:40", "23:40"],
-      "map": "Grothmar Valley",
+      "map": "grothmarValley",
       "waypoint": "[&BPgLAAA=]"
     },
     {
-      "parentKey": "OozePit",
+      "parentKey": "oozePit",
       "start": ["1:05", "3:05", "5:05", "7:05", "9:05", "11:05", "13:05", "15:05", "17:05", "19:05", "21:05", "23:05"],
-      "map": "Grothmar Valley",
+      "map": "grothmarValley",
       "waypoint": "[&BPgLAAA=]"
     },
     {
-      "parentKey": "StormsofWinter",
+      "parentKey": "stormsOfWinter",
       "start": ["1:45", "3:45", "5:45", "7:45", "9:45", "11:45", "13:45", "15:45", "17:45", "19:45", "21:45", "23:45"],
-      "map": "Bjora Marches",
+      "map": "bjoraMarches",
       "waypoint": "[&BCcMAAA=]"
     },
     {
-      "parentKey": "IcebroodChampions",
+      "parentKey": "icebroodChampions",
       "start": ["0:05", "2:05", "4:05", "6:05", "8:05", "10:05", "12:05", "14:05", "16:05", "18:05", "20:05", "22:05"],
-      "map": "Bjora Marches",
+      "map": "bjoraMarches",
       "waypoint": "[&BCcMAAA=]"
     },
     {
-      "parentKey": "Drakkar",
+      "parentKey": "drakkar",
       "start": ["1:20", "3:20", "5:20", "7:20", "9:20", "11:20", "13:20", "15:20", "17:20", "19:20", "21:20", "23:20"],
-      "map": "Bjora Marches",
+      "map": "bjoraMarches",
       "waypoint": "[&BDkMAAA=]"
     },
     {
-      "parentKey": "Dragonstorm",
+      "parentKey": "dragonstorm",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "Eye of the North",
+      "map": "eyeOfTheNorth",
       "waypoint": "[&BAkMAAA=]"
     },
     {
-      "parentKey": "AetherbladeAssault",
+      "parentKey": "aetherbladeAssault",
       "start": ["1:30", "3:30", "5:30", "7:30", "9:30", "11:30", "13:30", "15:30", "17:30", "19:30", "21:30", "23:30"],
-      "map": "Seitung Province",
+      "map": "seitungProvince",
       "waypoint": "[&BGUNAAA=]"
     },
     {
-      "parentKey": "KainengBlackout",
+      "parentKey": "kainengBlackout",
       "start": ["0:00", "2:00", "4:00", "6:00", "8:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"],
-      "map": "New Kaineng City",
+      "map": "newKainengCity",
       "waypoint": "[&BBkNAAA=]"
     },
     {
-      "parentKey": "GangWar",
+      "parentKey": "gangWar",
       "start": ["0:30", "2:30", "4:30", "6:30", "8:30", "10:30", "12:30", "14:30", "16:30", "18:30", "20:30", "22:30"],
-      "map": "The Echovald Wilds",
+      "map": "theEchovaldWilds",
       "waypoint": "[&BMwMAAA=]"
     },
     {
-      "parentKey": "Aspenwood",
+      "parentKey": "aspenwood",
       "start": ["1:40", "3:40", "5:40", "7:40", "9:40", "11:40", "13:40", "15:40", "17:40", "19:40", "21:40", "23:40"],
-      "map": "The Echovald Wilds",
+      "map": "theEchovaldWilds",
       "waypoint": "[&BPkMAAA=]"
     },
     {
-      "parentKey": "Dragon'sEnd",
+      "parentKey": "dragonsEnd",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "Dragon's End",
+      "map": "dragonsEnd",
       "waypoint": "[&BKIMAAA=]"
     },
     {
-      "parentKey": "JadeMaw",
+      "parentKey": "jadeMaw",
       "start": ["0:05", "2:05", "4:05", "6:05", "8:05", "10:05", "12:05", "14:05", "16:05", "18:05", "20:05", "22:05", "0:45", "2:45", "4:45", "6:45", "8:45", "10:45", "12:45", "14:45", "16:45", "18:45", "20:45", "22:45"],
-      "map": "Dragon's End",
+      "map": "dragonsEnd",
       "waypoint": "[&BKIMAAA=]"
     },
     {
-      "parentKey": "Wizard'sTower",
+      "parentKey": "wizardsTower",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "Skywatch Archipelago",
+      "map": "skywatchArchipelago",
       "waypoint": "[&BL4NAAA=]"
     },
     {
-      "parentKey": "TargetPractice",
+      "parentKey": "targetPractice",
       "start": ["1:00", "3:00", "5:00", "7:00", "9:00", "11:00", "13:00", "15:00", "17:00", "19:00", "21:00", "23:00"],
-      "map": "Wizard's Tower",
+      "map": "wizardsTower",
       "waypoint": "[&BB8OAAA=]"
     },
     {
-      "parentKey": "FlybyNight",
+      "parentKey": "flyByNight",
       "start": ["1:40", "3:40", "5:40", "7:40", "9:40", "11:40", "13:40", "15:40", "17:40", "19:40", "21:40", "23:40"],
-      "map": "Wizard's Tower",
+      "map": "wizardsTower",
       "waypoint": "[&BB8OAAA=]"
     },
     {
-      "parentKey": "DefenseofAmnitas",
+      "parentKey": "defenseOfAmnytas",
       "start": ["0:00", "2:00", "4:00", "6:00", "8:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"],
-      "map": "Amnytas",
+      "map": "amnytas",
       "waypoint": "[&BDQOAAA=]"
     },
     {
-      "parentKey": "Convergence:InnerNayos",
+      "parentKey": "convergenceInnerNayos",
       "start": ["1:30", "4:30", "7:30", "10:30", "13:30", "16:30", "19:30", "22:30"],
-      "map": "Wizard's Tower",
+      "map": "wizardsTower",
       "waypoint": "[&BB8OAAA=]"
     },
     {
-      "parentKey": "MistsandMonsters",
+      "parentKey": "mistsAndMonsters",
       "start": ["0:40", "2:40", "4:40", "6:40", "8:40", "10:40", "12:40", "14:40", "16:40", "18:40", "24:30", "22:40"],
-      "map": "Janthir Syntri",
+      "map": "janthirSyntri",
       "waypoint": "Decima [&BCoPAAA=] - Greer [&BLgOAAA=]"
     },
     {
-      "parentKey": "Convergence:MountBalrior",
+      "parentKey": "convergenceMountBalrior",
       "start": ["0:00", "3:00", "6:00", "9:00", "12:00", "15:00", "18:00", "21:00"],
-      "map": "Lowland Shore",
+      "map": "lowlandShore",
       "waypoint": "[&BK4OAAA=]"
     }
   ]
