@@ -315,6 +315,40 @@ h4{
     white-space: nowrap;
 }
 
+.lang-switcher{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    margin-right: 3.5rem;
+    font-size: .85rem;
+    user-select: none;
+}
+
+.lang-btn{
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: .85rem;
+    padding: .2rem .4rem;
+    border-radius: 4px;
+    transition: color .2s, background-color .2s;
+}
+
+.lang-btn:hover{
+    color: var(--text-color);
+}
+
+.lang-btn.lang-active{
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
+.lang-separator{
+    color: #555;
+}
+
 
 .about{
     padding-bottom: 100px;
